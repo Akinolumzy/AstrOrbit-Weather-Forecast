@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstrOrbit European Forecast</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+
+      <h1 class="section-heading">AstrOrbit</h1>
+      <h2 class="section-subheading">European Weather Forecast</h2>
+      <p>
+        <code class="copyright-text"
+          >Powered by
+          <a
+            href="http://www.7timer.info/doc.php?lang=en"
+            target="_blank"
+            data-toggle="tooltip"
+            data-placement="Top"
+            title=""
+            onclick="javascript:toolTipReset()"
+            data-original-title="Tap to visit 7Timer!"
+            ><span class="keyword-magnet">7Timer!</span></a
+          ></code
+        >
+      </p>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Select a City</h2>
+        <form id="weather-form">
+          <select id="city-select">
+            <option value="">-- Select a city --</option>
+            <option value="52.367,4.904">Amsterdam, Netherlands</option>
+            <option value="39.933,32.859">Ankara, Turkey</option>
+            <option value="56.134,12.945">Åstorp, Sweden</option>
+            <option value="37.983,23.727">Athens, Greece</option>
+            <option value="54.597,-5.930">Belfast, Northern Ireland</option>
+            <option value="41.387,2.168">Barcelona, Spain</option>
+            <option value="52.520,13.405">Berlin, Germany</option>
+            <option value="46.948,7.447">Bern, Switzerland</option>
+            <option value="43.263,-2.935">Bilbao, Spain</option>
+            <option value="50.847,4.357">Brussels, Belgium</option>
+            <option value="47.497,19.040">Bucharest, Romania</option>
+            <option value="59.329,18.068">Budapest, Hungary</option>
+            <option value="51.483,-3.168">Cardiff, Wales</option>
+            <option value="50.937,6.96">Cologne, Germany</option>
+            <option value="55.676,12.568">Copenhagen, Denmark</option>
+            <option value="51.898,-8.475">Cork, Ireland</option>
+            <option value="53.349,-6.260">Dublin, Ireland</option>
+            <option value="55.953,-3.188">Edinburgh, Scotland</option>
+            <option value="43.7696,11.255">Florence, Italy</option>
+            <option value="50.110,8.682">Frankfurt, Germany</option>
+            <option value="32.650,-16.908">Funchal, Portugal</option>
+            <option value="36.140,-5.353">Gibraltar</option>
+            <option value="57.708,11.974">Gothenburg, Sweden</option>
+            <option value="53.548,9.987">Hamburg, Germany</option>
+            <option value="60.169,24.938">Helsinki, Finland</option>
+            <option value="39.020,1.482">Ibiza, Spain</option>
+            <option value="50.450,30.523">Kyiv, Ukraine</option>
+            <option value="61.115,10.466">Lillehammer, Norway</option>
+            <option value="38.722,-9.139">Lisbon, Portugal</option>
+            <option value="51.507,-0.127">London, England</option>
+            <option value="40.416,-3.703">Madrid, Spain</option>
+            <option value="39.695,3.017">Mallorca, Spain</option>
+            <option value="53.480,-2.242">Manchester, England</option>
+            <option value="43.296,5.369">Marseille, France</option>
+            <option value="27.760,-15.586">Maspalomas, Spain</option>
+            <option value="45.464,9.190">Milan, Italy</option>
+            <option value="48.135,11.582">Munich, Germany</option>
+            <option value="40.851,14.268">Naples, Italy</option>
+            <option value="43.034,-2.417">Oñati, Spain</option>
+            <option value="59.913,10.752">Oslo, Norway</option>
+            <option value="48.856,2.352">Paris, France</option>
+            <option value="50.075,14.437">Prague, Czech Republic</option>
+            <option value="64.146,-21.942">Reykjavík, Iceland</option>
+            <option value="56.879,24.603">Riga, Latvia</option>
+            <option value="41.902,12.496">Rome, Italy</option>
+            <option value="39.453,-31.127">
+              Santa Cruz das Flores, Portugal
+            </option>
+            <option value="28.463,-16.251">
+              Santa Cruz de Tenerife, Spain
+            </option>
+            <option value="57.273,-6.215">Skye, Scotland</option>
+            <option value="42.697,23.321">Sofia, Bulgaria</option>
+            <option value="59.329,18.068">Stockholm, Sweden</option>
+            <option value="59.437,24.753">Tallinn, Estonia</option>
+            <option value="18.208,16.373">Vienna, Austria</option>
+            <option value="52.229,21.012">Warsaw, Poland</option>
+            <option value="53.961,-1.07">York, England</option>
+            <option value="47.376,8.541">Zurich, Switzerland</option>
+          </select>
+          <button type="submit">Get Forecast</button>
+        </form>
+        <div id="results"></div>
+      </section>
+
+      <section class="forecast-section">
+        <div id="forecast-container">
+          <div class="forecast-item">
+            <h3 id="city-name"></h3>
+            <div class="weather-box">
+              <p id="forecast-date"></p>
+              <img
+                id="weather-icon"
+                src="images/weather-forecast.png"
+                alt="Weather Icon"
+                style="display: block"
+              />
+              <p id="weather-description"></p>
+              <p id="temperature"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="section-divider"><img src="images/cloudline.png" /></div>
+      <code class="copyright-text">© Copyright 2024 AstrOrbit</code>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

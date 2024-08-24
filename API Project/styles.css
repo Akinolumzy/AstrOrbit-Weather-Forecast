@@ -1,0 +1,231 @@
+body {
+  background: url("/images/thunderstorm-countryside.jpg") no-repeat center
+    center fixed;
+  color: #f7fb00;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+/* Apply Playfair Display to the header */
+header h1,
+header h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Apply Roboto to the main content */
+body,
+p,
+h3,
+.forecast-item {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Adjust font weights for better contrast */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+p,
+.forecast-item p {
+  font-weight: 400;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.section-subheading {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+label,
+select {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+#city-name {
+  font-size: 2rem;
+  margin-top: 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#weather-icon {
+  margin: 20px 0;
+  max-width: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#weather-icon:hover {
+  transform: scale(1.1);
+}
+
+#weather-description {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+button[type="submit"] {
+  background: #ffeb3b;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.section-divider {
+  display: none;
+}
+
+button[type="submit"]:hover {
+  background: #ffc107;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: red;
+  text-align: center;
+}
+
+.forecast-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#forecast-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forecast-item {
+  background: linear-gradient(135deg, #6ec1e4, #235b91);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.forecast-item h3 {
+  margin-bottom: 10px;
+}
+
+.forecast-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.forecast-item:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for Date and Temperature */
+.forecast-item p:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.forecast-item p:last-of-type {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.form-section,
+.forecast-section {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#weather-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#results {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright-text {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+#results h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
